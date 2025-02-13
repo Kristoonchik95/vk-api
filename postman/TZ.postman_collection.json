@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "bcd6bbf4-28e1-4dc9-97e4-c27af53cafec",
+		"name": "TZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37805113"
+	},
+	"item": [
+		{
+			"name": "коммент фотки",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "access_token",
+							"value": "ВАШ_ТОКЕН",
+							"type": "text"
+						},
+						{
+							"key": "owner_id",
+							"value": "189704458",
+							"description": "189704458",
+							"type": "text"
+						},
+						{
+							"key": "photo_id",
+							"value": "303057922",
+							"description": "303057922",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "тестовый комментарий из Postman!",
+							"description": "тестовый комментарий из Postman!",
+							"type": "text"
+						},
+						{
+							"key": "v",
+							"value": "5.131",
+							"description": "5.131",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.vk.com/method/photos.createComment?access_token=ВАШ_ТОКЕН&owner_id=189704458&photo_id=303057922&message=тестовый комментарий из Postman!&v=5.131",
+					"protocol": "https",
+					"host": [
+						"api",
+						"vk",
+						"com"
+					],
+					"path": [
+						"method",
+						"photos.createComment"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "ВАШ_ТОКЕН",
+							"description": "ВАШ_ТОКЕН"
+						},
+						{
+							"key": "owner_id",
+							"value": "189704458",
+							"description": "189704458"
+						},
+						{
+							"key": "photo_id",
+							"value": "303057922",
+							"description": "303057922"
+						},
+						{
+							"key": "message",
+							"value": "тестовый комментарий из Postman!",
+							"description": "тестовый комментарий из Postman!"
+						},
+						{
+							"key": "v",
+							"value": "5.131",
+							"description": "5.131"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "проверка прав токена",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.vk.com/method/account.getAppPermissions?access_token=ВАШ_ТОКЕН&v=5.131",
+					"protocol": "https",
+					"host": [
+						"api",
+						"vk",
+						"com"
+					],
+					"path": [
+						"method",
+						"account.getAppPermissions"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "ВАШ_ТОКЕН"
+						},
+						{
+							"key": "v",
+							"value": "5.131"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "проверка токена",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.vk.com/method/users.get?access_token=ВАШ_ТОКЕН&v=5.131",
+					"protocol": "https",
+					"host": [
+						"api",
+						"vk",
+						"com"
+					],
+					"path": [
+						"method",
+						"users.get"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "ВАШ_ТОКЕН"
+						},
+						{
+							"key": "v",
+							"value": "5.131"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "проверка комментов",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.vk.com/method/photos.getComments?access_token=ВАШ_ТОКЕН&owner_id=189704458&photo_id=303057922&v=5.131",
+					"protocol": "https",
+					"host": [
+						"api",
+						"vk",
+						"com"
+					],
+					"path": [
+						"method",
+						"photos.getComments"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "ВАШ_ТОКЕН"
+						},
+						{
+							"key": "owner_id",
+							"value": "189704458"
+						},
+						{
+							"key": "photo_id",
+							"value": "303057922"
+						},
+						{
+							"key": "v",
+							"value": "5.131"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "читерство",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru,en;q=0.9"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "cookie",
+						"value": "remixlang=0; remixstlid=9078600879743779242_uSYhvr2sOOmwz3SpZZRxZbZhytBHGM65xNZyoYFRVQo; remixuas=MzkwMTVjMWQ2MmQxODEzNWY3MDVkOTM5; remixstid=1871149893_OePJsjm0Uyjlykin3D1CCKzpfHhrV7voQGdL7CidF9s; remixuacck=e70b5cb91f42acda8b; remixscreen_width=1440; remixscreen_height=900; remixscreen_dpr=2; remixcolor_scheme_mode=auto; remixdt=7200; remixrt=1; tmr_lvid=bacc5c0cb93d1c9ce5710f896ee47de1; tmr_lvidTS=1731268472537; remixscreen_depth=30; remixscreen_orient=1; remixgp=6b2d5a5964031a20ea017610a80e9dc8; remixsf=1; remixsuc=1%3A; remixnsid=vk1.a.nMth-vRWZEaYPe_o6Ajceb6XhD0hPL9hA8ye2cfTQZIh0APLVDFnvFP46BAwTU7E5LqUmDEQkhJ9unp23bx8C9csHvSb46gyjP-MsBkIKN1J8c8dm8ohRqo-cqrQfC2tLvdoWm8YuXPpD4q7NwNLYX_yXGvtjRopqIOptxPCdcbuJ-hf2_D-pfVelptZDCnN; remixdmgr=86c612d61f68f8e72a36f1124cb345235a508ddae71b5c145a92875c4899e4b1; remixseenads=0; remixpuad=8vd4mMlLeMLLISv4M5y7HAmilNKHyHx8m8YetHd2yLw; remixsid=1_SRY9DOd-eF8l7QPmH3FinlKsZnVowB8FmEET6xwvHYN9kOTClWD7G1oU44Aj-q0EbWkpc1DlyI6fDOBMocAO5w; remixua=52%7C-1%7C180%7C4187955669; remixdark_color_scheme=1; httoken=lk9k5mAWa9n2jXycO7EQysG0EQm2ooerlcNuAuXMDFxqGfIVNNkjH6JpEhFRm9UwWUe0ItP8rp0tdicvj6M-AVTTT0RuWgn5SV6wyJ-LbBIhXZbU4I3eROz7pZEIz34FzVw; remixscreen_winzoom=3.07; domain_sid=xv1S6qqnQc6DFp4GrcY6X%3A1739341162846; tmr_detect=0%7C1739341164901"
+					},
+					{
+						"key": "origin",
+						"value": "https://vk.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://vk.com/jump_tages?z=photo189704458_303057922%2Falbum189704458_0%2Frev"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Message",
+							"value": "текст с постман",
+							"type": "text"
+						},
+						{
+							"key": "act",
+							"value": "post_comment",
+							"type": "text"
+						},
+						{
+							"key": "al",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "from_group",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "hash",
+							"value": "062e4999d0c764c06f",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"value": "189704458_303057922",
+							"type": "text"
+						},
+						{
+							"key": "reply_to",
+							"value": "82",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://vk.com/al_photos.php?act=post_comment",
+					"protocol": "https",
+					"host": [
+						"vk",
+						"com"
+					],
+					"path": [
+						"al_photos.php"
+					],
+					"query": [
+						{
+							"key": "act",
+							"value": "post_comment"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://vk.com/al_photos.php?act=post_comment' \\\n  -H 'accept: */*' \\\n  -H 'accept-language: ru,en;q=0.9' \\\n  -H 'content-type: application/x-www-form-urlencoded' \\\n  -H 'cookie: remixlang=0; remixstlid=9078600879743779242_uSYhvr2sOOmwz3SpZZRxZbZhytBHGM65xNZyoYFRVQo; remixuas=MzkwMTVjMWQ2MmQxODEzNWY3MDVkOTM5; remixstid=1871149893_OePJsjm0Uyjlykin3D1CCKzpfHhrV7voQGdL7CidF9s; remixuacck=e70b5cb91f42acda8b; remixscreen_width=1440; remixscreen_height=900; remixscreen_dpr=2; remixcolor_scheme_mode=auto; remixdt=7200; remixrt=1; tmr_lvid=bacc5c0cb93d1c9ce5710f896ee47de1; tmr_lvidTS=1731268472537; remixscreen_depth=30; remixscreen_orient=1; remixgp=6b2d5a5964031a20ea017610a80e9dc8; remixsf=1; remixsuc=1%3A; remixnsid=vk1.a.nMth-vRWZEaYPe_o6Ajceb6XhD0hPL9hA8ye2cfTQZIh0APLVDFnvFP46BAwTU7E5LqUmDEQkhJ9unp23bx8C9csHvSb46gyjP-MsBkIKN1J8c8dm8ohRqo-cqrQfC2tLvdoWm8YuXPpD4q7NwNLYX_yXGvtjRopqIOptxPCdcbuJ-hf2_D-pfVelptZDCnN; remixdmgr=86c612d61f68f8e72a36f1124cb345235a508ddae71b5c145a92875c4899e4b1; remixseenads=0; remixpuad=8vd4mMlLeMLLISv4M5y7HAmilNKHyHx8m8YetHd2yLw; remixsid=1_SRY9DOd-eF8l7QPmH3FinlKsZnVowB8FmEET6xwvHYN9kOTClWD7G1oU44Aj-q0EbWkpc1DlyI6fDOBMocAO5w; remixua=52%7C-1%7C180%7C4187955669; remixdark_color_scheme=1; httoken=lk9k5mAWa9n2jXycO7EQysG0EQm2ooerlcNuAuXMDFxqGfIVNNkjH6JpEhFRm9UwWUe0ItP8rp0tdicvj6M-AVTTT0RuWgn5SV6wyJ-LbBIhXZbU4I3eROz7pZEIz34FzVw; remixscreen_winzoom=3.07; domain_sid=xv1S6qqnQc6DFp4GrcY6X%3A1739341162846; tmr_detect=0%7C1739341164901' \\\n  -H 'origin: https://vk.com' \\\n  -H 'priority: u=1, i' \\\n  -H 'referer: https://vk.com/jump_tages?z=photo189704458_303057922%2Falbum189704458_0%2Frev' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"130\", \"YaBrowser\";v=\"24.12\", \"Not?A_Brand\";v=\"99\", \"Yowser\";v=\"2.5\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'sec-fetch-dest: empty' \\\n  -H 'sec-fetch-mode: cors' \\\n  -H 'sec-fetch-site: same-origin' \\\n  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36' \\\n  -H 'x-requested-with: XMLHttpRequest' \\\n  --data-raw 'Message=test&act=post_comment&al=1&from_group=&hash=062e4999d0c764c06f&photo=189704458_303057922&reply_to=82'"
+			},
+			"response": []
+		}
+	]
+}
