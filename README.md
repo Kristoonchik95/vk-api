@@ -47,7 +47,7 @@
 | message       |"тестовый комментарий из Postman!" |    
 | v             | 5.131                             |  
 
-Пример моего запроса: POST  [https://api.vk.com/method/photos.createComment?access_token=ВАШ_ТОКЕН&owner_id=189704458&photo_id=303057922&message=тестовый комментарий из Postman!&v=5.131](https://api.vk.com/method/photos.createComment?access_token=ВАШ_ТОКЕН&owner_id=189704458&photo_id=303057922&message=тестовый комментарий из Postman!&v=5.131)
+Пример моего запроса: POST  [https://api.vk.com/method/photos.createComment?access_token=ВАШ_ТОКЕН&owner_id=189704458&photo_id=303057922&message=тестовый_комментарий_из_Postman!&v=5.131](https://api.vk.com/method/photos.createComment?access_token=ВАШ_ТОКЕН&owner_id=189704458&photo_id=303057922&message=тестовый_комментарий_из_Postman!&v=5.131)
 
 ---
 
